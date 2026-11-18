@@ -4,23 +4,23 @@ An end-to-end Business Intelligence portfolio project built in **Microsoft Power
 
 > **Dataset notice:** This project uses synthetic demonstration data for learning and portfolio purposes. It does not represent a real company or actual customer transactions.
 
-## Dashboard preview
+## Dashboard Preview
 
 ### 1. Sales Performance Overview
-![Sales Performance Overview](dashboard-screenshots/01-sales-performance-overview.png)
+![Sales Performance Overview](01-sales-performance-overview.png)
 
 ### 2. Product Performance Analytics
-![Product Performance Analytics](dashboard-screenshots/02-product-performance-analytics.png)
+![Product Performance Analytics](02-product-performance-analytics.png)
 
 ### 3. Regional Sales & Performance Analytics
-![Regional Sales & Performance Analytics](dashboard-screenshots/03-regional-sales-performance.png)
+![Regional Sales & Performance Analytics](03-regional-sales-performance.png)
 
 ### 4. Customer Insights & Segmentation
-![Customer Insights & Segmentation](dashboard-screenshots/04-customer-insights-segmentation.png)
+![Customer Insights & Segmentation](04-customer-insights-segmentation.png)
 
-## Key metrics shown in the report
+## Key Metrics Shown in the Report
 
-| KPI | Dashboard value |
+| KPI | Dashboard Value |
 |---|---:|
 | Total Sales | ₹134.21M |
 | Total Profit | ₹38.73M |
@@ -33,14 +33,14 @@ An end-to-end Business Intelligence portfolio project built in **Microsoft Power
 
 Values are taken from the supplied dashboard screenshots and represent the report's displayed baseline state with filters cleared where applicable.
 
-## Report pages
+## Report Pages
 
 - **Sales Dashboard:** KPI cards, sales by region, profit by category, and monthly sales trend.
 - **Product Analytics:** Top and bottom products by profit, category/subcategory performance, and discount-versus-profitability analysis.
 - **Regional Analysis:** Regional sales and profit contribution, state-level performance, and regional comparison.
 - **Customer Insights:** Customer segments, top customers, city-level sales, repeat-customer metrics, and customer-level performance.
 
-## Data model
+## Data Model
 
 The model follows a star-schema pattern with `FactOrders` as the central fact table and three dimensions:
 
@@ -60,7 +60,7 @@ The included Excel workbook contains the project tables:
 - `DimDate`: calendar dimension (1,096 dates)
 - Currency: Indian Rupees (INR, ₹)
 
-## Tools & skills demonstrated
+## Tools & Skills Demonstrated
 
 - Microsoft Power BI Desktop
 - Power Query for data preparation
@@ -73,19 +73,19 @@ The included Excel workbook contains the project tables:
 
 - `Retail_Sales_Performance_Dashboard.pbix` — editable Power BI report and model
 - `Retail_Sales_Portfolio_Dataset.xlsx` — source workbook containing the dataset tables
-- `dashboard-screenshots/` — screenshots of all four report pages
+- Dashboard screenshot PNG files — screenshots of all four report pages
 
-## How to explore
+## How to Explore
 
 1. Download the `.pbix` file from this repository.
 2. Open it with Power BI Desktop.
 3. If Power BI prompts for data-source access, point it to the included Excel workbook or follow the data-source settings saved in the report.
 4. Explore the four report pages and interact with the slicers and visuals.
 
-## Analytical considerations
+## Analytical Considerations
 
 The dataset contains `Sales`, `Cost`, `ShippingCost`, and `Profit` fields; profit is defined in the source data as `Sales - Cost - ShippingCost`. The `OrderStatus` field includes Delivered, Returned, and Cancelled. Interpret results with that status mix in mind; a production analysis should define and document a business rule for cancelled and returned orders.
 
-## Suggested GitHub topics
+## Suggested GitHub Topics
 
 `power-bi` `data-analytics` `dax` `power-query` `business-intelligence` `sales-dashboard` `data-visualization`
